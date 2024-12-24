@@ -79,14 +79,6 @@
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
-        <!-- provided dependencies -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <distributionManagement>
@@ -101,7 +93,6 @@
             <name>Landmark Technologies Snapshot Nexus Repository </name>
             <url>http://3.81.227.131:8081/repository/tesla-snapshots/</url>
         </snapshotRepository>
-
     </distributionManagement>
 
     <build>
@@ -136,7 +127,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-eclipse-plugin</artifactId>
-                <version>3.3</version>
+                <version>2.10</version> <!-- Updated version -->
                 <configuration>
                     <downloadSources>true</downloadSources>
                     <downloadJavadocs>true</downloadJavadocs>
@@ -156,7 +147,7 @@
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>4.3.0.1160</version> <!-- Updated version -->
+                <version>4.0.0.4121</version> <!-- Reverted to a stable version -->
             </plugin>
         </plugins>
     </build>
