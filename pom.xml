@@ -86,8 +86,8 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
             <scope>provided</scope>
-        </dependency>
-    </dependencies>
+        </dependency>	
+    </dependencies>	
 
     <distributionManagement>
         <repository>
@@ -142,7 +142,14 @@
                 </configuration>
             </plugin>
 
-            <!-- Sonar Maven Plugin Update -->
+            <!-- Updated maven-war-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version> <!-- Updated version -->
+            </plugin>
+
+            <!-- Updated Sonar Maven Plugin -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
